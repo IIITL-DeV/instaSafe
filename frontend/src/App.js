@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import { Web3Provider } from "@ethersproject/providers";
+import { Web3ReactProvider } from "@web3-react/core";
+import Homepage from "./components/Homepage.js";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Lets start with insta_safe
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Web3ReactProvider
+      getLibrary={(provider, connector) => new Web3Provider(provider)}
+    >
+      <Homepage />
+    </Web3ReactProvider>
+  )
 }
 
 export default App;
