@@ -20,7 +20,7 @@ const Titlebar = () => {
       <Grid container>
         <Grid item xs={12} sm={6}>
           <Typography variant="h4" color="textPrimary">
-            HURRICANE INSURANCE
+            InstaSafe
           </Typography>
         </Grid>
         <Grid
