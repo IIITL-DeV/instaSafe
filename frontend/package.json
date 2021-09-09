@@ -25,7 +25,7 @@
     "react-geocode": "^0.2.3",
 
     "rimble-ui": "^0.14.0",
-    "styled-components": "^5.2.1",
+    "styled-components": "^5.2.1"
 
   },
   "scripts": {
