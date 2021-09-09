@@ -11,7 +11,20 @@ const SUPERFLUID_HOST = "";
 const SUPERFLUID_CFA = ""
 const ACCEPTED_TOKEN = "";
 
+  // User registration info
+  address[] public addressesRegistered;
+  mapping(address => bool) public isAddressRegistered;
+  event UserRegistered(address user);
 
+  // To determine which users are sending premiums
+  uint256 public addressesSendingPremiumsCount = 0;
+  mapping(address => bool) public isAddressSendingPremiums;
+  event UnderlyingTokenTransferred(address receiver, uint256 amount);
+
+  // User location data
+  uint256 public constant locationDecimals = 2;
+  mapping(address => uint256[]) public userLocation;
+  
 async function main() {
   const contractFactory = await ethers.getContractFactory("SuperFluidTest");
   const contract = await contractFactory.deploy(
