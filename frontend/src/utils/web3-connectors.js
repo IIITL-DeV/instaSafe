@@ -5,7 +5,7 @@ const Injected = new InjectedConnector({
   supportedChainIds: [1, 3, 4, 5, 80001],
 });
 const Portis = new PortisConnector({
-  dAppId: "3ca5aba8-016e-4e79-bcff-fadc16aa76b1",
+  dAppId: "d3bc009a-73c8-4117-8a88-a68f79ada9d5",
   networks: [1, 5, 15001],
 });
 
