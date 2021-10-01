@@ -114,21 +114,60 @@ contract SuperFluidTest is SuperAppBase {
     _;
   }
 
-  function beforeAgreementCreated() external view override onlySuperfluidHost returns () {
-    
+  function beforeAgreementCreated(
+    ISuperToken, /* superToken */
+    address, /* agreementClass */
+    bytes32, /*agreementId*/
+    bytes calldata, /*agreementData*/
+    bytes calldata /*ctx*/
+  ) external view override onlySuperfluidHost returns (bytes memory cbdata) {
+    cbdata = bytes("");
   }
 
-  function afterAgreementCreated() external override onlySuperfluidHost returns () {
-    
+  function afterAgreementCreated(
+    ISuperToken, /* superToken */
+    address, /*agreementClass*/
+    bytes32, /* agreementId*/
+    bytes calldata, /*agreementData*/
+    bytes calldata, /*cbdata*/
+    bytes calldata ctx
+  ) external override onlySuperfluidHost returns (bytes memory newCtx) {
+    address sender = _superfluid_host.decodeCtx(ctx).msgSender;
+
+    isAddressSendingPremiums[sender] = true;
+    addressesSendingPremiumsCount += 1;
+    console.log(
+      "afterAgreementCreated: Agreement created by address: ",
+      sender
+    );
+    return ctx;
   }
 
-  function beforeAgreementTerminated() external view override onlySuperfluidHost returns () {
-    
+  function beforeAgreementTerminated(
+    ISuperToken, /*superToken*/
+    address, /* agreementClass */
+    bytes32, /*agreementId*/
+    bytes calldata, /*agreementData*/
+    bytes calldata /*ctx*/
+  ) external view override onlySuperfluidHost returns (bytes memory cbdata) {
+    // According to the app basic law, we should never revert in a termination callback
+    return bytes("");
   }
 
   function afterAgreementTerminated(
-    
-  ) external override onlySuperfluidHost returns () {
-    
+    ISuperToken, /* superToken */
+    address, /* agreementClass */
+    bytes32, /* agreementId */
+    bytes calldata agreementData,
+    bytes calldata, /* cbdata */
+    bytes calldata ctx
+  ) external override onlySuperfluidHost returns (bytes memory newCtx) {
+    // note that msgSender can be either flow sender, receiver or liquidator
+    // one must decode agreementData to determine who is the actual player
+    (address user, ) = abi.decode(agreementData, (address, address));
+    isAddressSendingPremiums[user] = false;
+    addressesSendingPremiumsCount -= 1;
+
+    return ctx;
   }
 }
