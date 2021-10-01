@@ -67,3 +67,34 @@ app.get("/cyclone_prob", async (req, res) => {
   });
   res.status(200).json({"premium": premium_rate});
 });
+
+app.get("/check_payout",async(req,res)=>{
+    var {lat,lon} = req.query;
+    lat = parseFloat(lat).toFixed(2);
+    lon = parseFloat(lon).toFixed(2);
+    var cond,wind_speed,pressure;
+    let api_key = "be43a2575f43d25e1508d83bba9465d7";
+    let route_url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+api_key;
+    const getobj = {
+        method: "GET",
+        uri: route_url
+    }
+    await request(getobj).then(function(result){
+        let weather = JSON.parse(result);
+        cond = weather.weather[0].description;
+        wind_speed = weather.wind.speed;
+        pressure = weather.main.pressure;
+        console.log(cond);
+
+
+    }).catch(function(err){
+        return res.status(400).json(JSON.parse(err.error));
+    });
+    if (cond=="tornado" && wind_speed>200 || pressure < 980)
+        res.status(200).json({"statusCode": 200, "tornado": 1});
+    else
+    res.status(200).json({"statusCode": 200, "tornado": 0});
+});
+
+
+app.listen(port, () => console.log(`API server running on port ${port}`));
