@@ -22,29 +22,30 @@ const Titlebar = () => {
       <Grid container>
         <Grid item xs={12} sm={4}>
           <Typography variant="h4" color="textPrimary">
-            
             <Link
-                to="/"
-                style={{textDecoration:'none',fontSize:"50px",color:"#262626"}}
-              >
-                INSTASAFE INSURANCE
-              </Link>
+              to="/"
+              style={{
+                textDecoration: "none",
+                fontSize: "50px",
+                color: "#262626",
+                marginLeft: "20px",
+              }}
+            >
+              INSTASAFE INSURANCE
+            </Link>
           </Typography>
         </Grid>
 
-        <Grid
-        item
-        sm={4}
-        xs={12}
-        alignItems="center"
-        
-        >
+        <Grid item sm={3} xs={12} alignItems="center">
           <Typography variant="h4" color="textPrimary">
             <div>
               <Link
                 to="/About"
-                style={{textDecoration:'none',fontSize:"50px",color:"#262626"}}
-
+                style={{
+                  textDecoration: "none",
+                  fontSize: "50px",
+                  color: "#262626",
+                }}
               >
                 About us
               </Link>
@@ -52,14 +53,13 @@ const Titlebar = () => {
           </Typography>
         </Grid>
 
-
         {/* <Link to="/about">Contact</Link> */}
 
         <Grid
           container
           item
           xs={12}
-          sm={4}
+          sm={5}
           spacing={2}
           alignItems="center"
           justify="flex-end"
@@ -69,11 +69,7 @@ const Titlebar = () => {
               <EthAddress address={account} />
             </Grid>
           )}
-          <Grid item>
-            <MetaMaskButton onClick={() => activate(Injected)}>
-              Metamask
-            </MetaMaskButton>
-          </Grid>
+
           <Grid item>
             <Button
               mainColor="#805ad5"
@@ -91,6 +87,12 @@ const Titlebar = () => {
                 <Grid item>Portis</Grid>
               </Grid>
             </Button>
+          </Grid>
+
+          <Grid item>
+            <MetaMaskButton onClick={() => activate(Injected)}>
+              Metamask
+            </MetaMaskButton>
           </Grid>
         </Grid>
       </Grid>
