@@ -1,131 +1,275 @@
 import React from "react";
-import { Button,CardGroup,Card,CardImg,CardBody,CardText,CardTitle,CardSubtitle } from "reactstrap";
+import { Button,CardText } from "reactstrap";
+
 
 export default function About() {
   return (
     <>
-      <div id="mission">
-        <h1>Our Mission Statement</h1>
-        Insurance.com educates customers and develops direct relationships with
-        carriers to help all customers shop real rates and get the right
-        insurance for their current needs.
-      </div>
-      
-      <div style={{justifyContent:"left"}}>
-      <Card style={{width:'400px'}}>
-          <CardImg
-            alt="Card image cap"
-            src="https://media-exp1.licdn.com/dms/image/C4D03AQF_ESGm89r3og/profile-displayphoto-shrink_800_800/0/1621412802782?e=1640822400&v=beta&t=GoGzQffluOgxf6CejCRJ4CHq8B6rTOIObwEIWMi4CXA"
-            top
-            width = "80%"
-            style={{borderRadius:'10px'}}
-          />
-          <CardBody>
-            <CardTitle tag="h2">Hritwik Tripathi</CardTitle>
-            <CardSubtitle className="mb-2 text-muted" tag="h4">
-                Be the change that you wish to see in the world
-            </CardSubtitle>
-            <CardText>
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </CardText>
-            <Button style={{alignItems:"center",marginLeft:'auto',marginRight:'auto'}} href='https://www.linkedin.com/in/hritwikt/'><img src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"/></Button>
-          </CardBody>
-        </Card>
+      <div alt="mission" style={{marginTop:"50px"}}>
+        <h1
+          style={{
+            fontSize: "40px",
+            margin: "20px",
+            display: "inline-block",
+            borderBottom: "3px solid",
+          }}
+        >
+          Our Mission Statement
+        </h1>
+        <p style={{ fontSize: "24px", margin: "20px" }}>
+          Insurance.com educates customers and develops direct relationships
+          with carriers to help all customers shop real rates and get the right
+          insurance for their current needs.
+        </p>
       </div>
 
-      <div style={{justifyContent:"right"}}>
-      <Card style={{width:'400px'}}>
-          <CardImg
-            alt="Card image cap"
-            src="https://media-exp1.licdn.com/dms/image/C4D03AQF_ESGm89r3og/profile-displayphoto-shrink_800_800/0/1621412802782?e=1640822400&v=beta&t=GoGzQffluOgxf6CejCRJ4CHq8B6rTOIObwEIWMi4CXA"
-            top
-            width = "80%"
-            style={{borderRadius:'10px'}}
-          />
-          <CardBody>
-            <CardTitle tag="h2">Hritwik Tripathi</CardTitle>
-            <CardSubtitle className="mb-2 text-muted" tag="h4">
-                Be the change that you wish to see in the world
-            </CardSubtitle>
-            <CardText>
+      <div alt="mission">
+        <h1
+          style={{
+            fontSize: "40px",
+            margin: "20px",
+            display: "inline-block",
+            borderBottom: "3px solid",
+          }}
+        >
+          Our Team
+        </h1>
+        <p style={{ fontSize: "24px", margin: "20px" }}>
+          We’re proud to be a diverse team united by values including
+          openness, positivity, and drive that stems from our developers. No
+          matter how much our teams grow, we still feel like family.
+        </p>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          background: "#732828",
+          marginTop: "20px",
+        }}
+      >
+        <div
+          style={{
+            width: "400px",
+            height: "500px",
+            background: "#ffffff",
+            margin: "auto",
+            borderRadius: "50px",
+          }}
+        >
+          <div style={{ marginTop: "20px" }}>
+            <img
+              alt="CardImage"
+              src="https://siasky.net/OACgFb5Uek4vOw-_eR_z-BRvyT9rjqk3OPdV6nvTAT8erQ"
+              style={{
+                borderRadius: "10px",
+                height: "200px",
+                width: "200px",
+                marginLeft: "25%",
+              }}
+            />
+            <h2 style={{ marginLeft: "25%" }}>Hritwik Tripathi</h2>
+            <CardText style={{ marginLeft: "5%", marginRight: "5%" }}>
               This card has supporting text below as a natural lead-in to
               additional content.
             </CardText>
-            <Button style={{alignItems:"center",marginLeft:'auto',marginRight:'auto'}} href='https://www.linkedin.com/in/hritwikt/'><img src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"/></Button>
-          </CardBody>
-        </Card>
+            <Button
+              style={{
+                alignItems: "center",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+              href="https://www.linkedin.com/in/hritwikt/"
+            >
+              <img
+                alt="linkedin_prop"
+                src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"
+                style={{ marginLeft: "20px" }}
+              />
+            </Button>
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "400px",
+            height: "500px",
+            background: "#ffffff",
+            margin: "auto",
+            borderRadius: "50px",
+          }}
+        >
+          <div style={{ marginTop: "20px" }}>
+            <img
+              alt="CardImage"
+              src="https://siasky.net/OACgFb5Uek4vOw-_eR_z-BRvyT9rjqk3OPdV6nvTAT8erQ"
+              style={{
+                borderRadius: "10px",
+                height: "200px",
+                width: "200px",
+                marginLeft: "25%",
+              }}
+            />
+            <h2 style={{ marginLeft: "25%" }}>Hritwik Tripathi</h2>
+            <CardText style={{ marginLeft: "5%", marginRight: "5%" }}>
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </CardText>
+            <Button
+              style={{
+                alignItems: "center",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+              href="https://www.linkedin.com/in/hritwikt/"
+            >
+              <img
+                alt="linkedin_prop"
+                src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"
+                style={{ marginLeft: "20px" }}
+              />
+            </Button>
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "400px",
+            height: "500px",
+            background: "#ffffff",
+            margin: "auto",
+            borderRadius: "50px",
+          }}
+        >
+          <div style={{ marginTop: "20px" }}>
+            <img
+              alt="CardImage"
+              src="https://siasky.net/OACgFb5Uek4vOw-_eR_z-BRvyT9rjqk3OPdV6nvTAT8erQ"
+              style={{
+                borderRadius: "10px",
+                height: "200px",
+                width: "200px",
+                marginLeft: "25%",
+              }}
+            />
+            <h2 style={{ marginLeft: "25%" }}>Hritwik Tripathi</h2>
+            <CardText style={{ marginLeft: "5%", marginRight: "5%" }}>
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </CardText>
+            <Button
+              style={{
+                alignItems: "center",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+              href="https://www.linkedin.com/in/hritwikt/"
+            >
+              <img
+                alt="linkedin_prop"
+                src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"
+                style={{ marginLeft: "20px" }}
+              />
+            </Button>
+          </div>
+        </div>
       </div>
 
-      <div style={{justifyContent:"left"}}>
-      <Card style={{width:'400px'}}>
-          <CardImg
-            alt="Card image cap"
-            src="https://media-exp1.licdn.com/dms/image/C4D03AQF_ESGm89r3og/profile-displayphoto-shrink_800_800/0/1621412802782?e=1640822400&v=beta&t=GoGzQffluOgxf6CejCRJ4CHq8B6rTOIObwEIWMi4CXA"
-            top
-            width = "80%"
-            style={{borderRadius:'10px'}}
-          />
-          <CardBody>
-            <CardTitle tag="h2">Hritwik Tripathi</CardTitle>
-            <CardSubtitle className="mb-2 text-muted" tag="h4">
-                Be the change that you wish to see in the world
-            </CardSubtitle>
-            <CardText>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          background: "#732828",
+          marginTop: "50px",
+          marginBottom:"100px"
+        }}
+      >
+        <div
+          style={{
+            width: "400px",
+            height: "500px",
+            background: "#ffffff",
+            margin: "auto",
+            borderRadius: "50px",
+          }}
+        >
+          <div style={{ marginTop: "20px" }}>
+            <img
+              alt="CardImage"
+              src="https://siasky.net/OACgFb5Uek4vOw-_eR_z-BRvyT9rjqk3OPdV6nvTAT8erQ"
+              style={{
+                borderRadius: "10px",
+                height: "200px",
+                width: "200px",
+                marginLeft: "25%",
+              }}
+            />
+            <h2 style={{ marginLeft: "25%" }}>Hritwik Tripathi</h2>
+            <CardText style={{ marginLeft: "5%", marginRight: "5%" }}>
               This card has supporting text below as a natural lead-in to
               additional content.
             </CardText>
-            <Button style={{alignItems:"center",marginLeft:'auto',marginRight:'auto'}} href='https://www.linkedin.com/in/hritwikt/'><img src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"/></Button>
-          </CardBody>
-        </Card>
-      </div>
+            <Button
+              style={{
+                alignItems: "center",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+              href="https://www.linkedin.com/in/hritwikt/"
+            >
+              <img
+                alt="linkedin_prop"
+                src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"
+                style={{ marginLeft: "20px" }}
+              />
+            </Button>
+          </div>
+        </div>
 
-      <div style={{justifyContent:"right"}}>
-      <Card style={{width:'400px'}}>
-          <CardImg
-            alt="Card image cap"
-            src="https://media-exp1.licdn.com/dms/image/C4D03AQF_ESGm89r3og/profile-displayphoto-shrink_800_800/0/1621412802782?e=1640822400&v=beta&t=GoGzQffluOgxf6CejCRJ4CHq8B6rTOIObwEIWMi4CXA"
-            top
-            width = "80%"
-            style={{borderRadius:'10px'}}
-          />
-          <CardBody>
-            <CardTitle tag="h2">Hritwik Tripathi</CardTitle>
-            <CardSubtitle className="mb-2 text-muted" tag="h4">
-                Be the change that you wish to see in the world
-            </CardSubtitle>
-            <CardText>
+        <div
+          style={{
+            width: "400px",
+            height: "500px",
+            background: "#ffffff",
+            margin: "auto",
+            borderRadius: "50px",
+          }}
+        >
+          <div style={{ marginTop: "20px" }}>
+            <img
+              alt="CardImage"
+              src="https://siasky.net/OACgFb5Uek4vOw-_eR_z-BRvyT9rjqk3OPdV6nvTAT8erQ"
+              style={{
+                borderRadius: "10px",
+                height: "200px",
+                width: "200px",
+                marginLeft: "25%",
+              }}
+            />
+            <h2 style={{ marginLeft: "25%" }}>Hritwik Tripathi</h2>
+            <CardText style={{ marginLeft: "5%", marginRight: "5%" }}>
               This card has supporting text below as a natural lead-in to
               additional content.
             </CardText>
-            <Button style={{alignItems:"center",marginLeft:'auto',marginRight:'auto'}} href='https://www.linkedin.com/in/hritwikt/'><img src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"/></Button>
-          </CardBody>
-        </Card>
+            <Button
+              style={{
+                alignItems: "center",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+              href="https://www.linkedin.com/in/hritwikt/"
+            >
+              <img
+                alt="linkedin_prop"
+                src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"
+                style={{ marginLeft: "20px" }}
+              />
+            </Button>
+          </div>
+        </div>
       </div>
-
-      <div style={{justifyContent:"left"}}>
-      <Card style={{width:'400px'}}>
-          <CardImg
-            alt="Card image cap"
-            src="https://media-exp1.licdn.com/dms/image/C4D03AQF_ESGm89r3og/profile-displayphoto-shrink_800_800/0/1621412802782?e=1640822400&v=beta&t=GoGzQffluOgxf6CejCRJ4CHq8B6rTOIObwEIWMi4CXA"
-            top
-            width = "80%"
-            style={{borderRadius:'10px'}}
-          />
-          <CardBody>
-            <CardTitle tag="h2">Hritwik Tripathi</CardTitle>
-            <CardSubtitle className="mb-2 text-muted" tag="h4">
-                Be the change that you wish to see in the world
-            </CardSubtitle>
-            <CardText>
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </CardText>
-            <Button style={{alignItems:"center",marginLeft:'auto',marginRight:'auto'}} href='https://www.linkedin.com/in/hritwikt/'><img src="https://img.icons8.com/material-outlined/50/000000/linkedin--v1.png"/></Button>
-          </CardBody>
-        </Card>
-      </div>
-      
     </>
   );
 }
