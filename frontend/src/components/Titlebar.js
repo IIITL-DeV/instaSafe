@@ -1,8 +1,10 @@
-import React from "react";
+import { React } from "react";
 import { Portis, Injected } from "../utils/web3-connectors";
 import { useWeb3React } from "@web3-react/core";
 import { AppBar, Grid, Typography } from "@material-ui/core";
 import { MetaMaskButton, Button, EthAddress } from "rimble-ui";
+import About from "./About";
+import { Link } from "react-router-dom";
 
 const styles = {
   appbar: {
@@ -18,16 +20,46 @@ const Titlebar = () => {
   return (
     <AppBar position="static" style={styles.appbar}>
       <Grid container>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={4}>
           <Typography variant="h4" color="textPrimary">
-            InstaSafe
+            
+            <Link
+                to="/"
+                style={{textDecoration:'none',fontSize:"50px",color:"#262626"}}
+              >
+                INSTASAFE INSURANCE
+              </Link>
           </Typography>
         </Grid>
+
+        <Grid
+        item
+        sm={4}
+        xs={12}
+        alignItems="center"
+        
+        >
+          <Typography variant="h4" color="textPrimary">
+            <div>
+              <Link
+                to="/About"
+                style={{textDecoration:'none',fontSize:"50px",color:"#262626"}}
+
+              >
+                About us
+              </Link>
+            </div>
+          </Typography>
+        </Grid>
+
+
+        {/* <Link to="/about">Contact</Link> */}
+
         <Grid
           container
           item
           xs={12}
-          sm={6}
+          sm={4}
           spacing={2}
           alignItems="center"
           justify="flex-end"

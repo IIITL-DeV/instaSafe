@@ -64,10 +64,10 @@ const RegisterDialog = ({ refresh }) => {
 
   return (
     <>
-      <Button onClick={() => setIsOpen(true)} size="large" variant="outlined">
-        <Typography variant="h2">Register</Typography>
+      <Button onClick={() => setIsOpen(true)} size="large" variant="outlined" style={{marginTop :'250px',position:"relative"}}>
+        <Typography variant="h3">Register</Typography>
       </Button>
-      <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
+      <Dialog open={isOpen} onClose={() => setIsOpen(false)} style={{marginTop:'250px'}}>
         <DialogTitle>Apply for Insurance</DialogTitle>
         <DialogContent>
           {transactionProcessing && <CircularProgress />}
@@ -121,6 +121,8 @@ const RegisterDialog = ({ refresh }) => {
                 setIsOpen(false);
                 refresh();
               }}
+
+              style={{marginTop:'20px'}}
             >
               Register
             </Button>
