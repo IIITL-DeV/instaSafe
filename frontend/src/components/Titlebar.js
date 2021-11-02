@@ -26,7 +26,7 @@ const Titlebar = () => {
               to="/"
               style={{
                 textDecoration: "none",
-                fontSize: "50px",
+                fontSize: "25px",
                 color: "#262626",
                 marginLeft: "20px",
               }}
@@ -36,20 +36,34 @@ const Titlebar = () => {
           </Typography>
         </Grid>
 
-        <Grid item sm={3} xs={12} alignItems="center">
+        <Grid item sm={3} xs={16} alignItems="center">
           <Typography variant="h4" color="textPrimary">
             <div>
               <Link
                 to="/About"
                 style={{
                   textDecoration: "none",
-                  fontSize: "50px",
-                  color: "#262626",
+                  fontSize: "25px",
+                  color: "white",
+                  backgroundColor:"black",
                 }}
               >
-                About us
+                ABOUT US
+              </Link>
+              <Link
+                to="/Faq"
+                style={{
+                  textDecoration: "none",
+                  fontSize: "25px",
+                  color: "white",
+                  backgroundColor:"black",
+                  marginLeft: "20px",
+                }}
+              >
+                FAQ
               </Link>
             </div>
+
           </Typography>
         </Grid>
 

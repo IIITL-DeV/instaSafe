@@ -54,19 +54,28 @@ const Homepage = () => {
 
   return (
     <>
-      
+      <div
+        class="bg_image"
+        style={{
+          backgroundImage: `url('https://wallup.net/wp-content/uploads/2016/07/20/23083-waves-The_Great_Wave_off_Kanagawa.jpg')`,
+          backgroundSize: "cover",
+          height: "92vh",
+          opacity:"0.4",
+          marginTop:"5px",
+        }}
+      ></div>
       <div
         style={{
           position: "absolute",
           left: "50%",
           top: "50%",
+          color:"darkstalegrey",
           transform: "translate(-50%, -50%)",
         }}
       >
         {!isRegistered && (
           <Typography variant="h2">
-            A Natural Disaster can strike at any moment. Register today to get insured
-            against damages that may uproot your life.
+         <i> "If you wish to be protected against damages that could wreck your life, then you must purchase insurance today."</i>
           </Typography>
         )}
         {isRegistered && !isPayingPremiun && (
