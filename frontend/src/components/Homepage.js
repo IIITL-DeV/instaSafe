@@ -30,9 +30,9 @@ const Homepage = () => {
         account
       );
       if (registrationStatus) {
-        console.log(`registered`);
+        console.log(`${account} is registered`);
       } else {
-        console.log(`not registred`);
+        console.log(`${account} is not registred`);
       }
       setIsRegistered(registrationStatus);
 
@@ -41,9 +41,9 @@ const Homepage = () => {
         account
       );
       if (premiumPaymentStatus) {
-        console.log(`paying premiums`);
+        console.log(`${account} is paying premiums`);
       } else {
-        console.log(`not paying premiums`);
+        console.log(`${account} is not paying premiums`);
       }
       setIsPayingPremiun(premiumPaymentStatus);
     };
@@ -54,7 +54,7 @@ const Homepage = () => {
 
   return (
     <>
-      <Titlebar />
+      
       <div
         style={{
           position: "absolute",
@@ -65,14 +65,14 @@ const Homepage = () => {
       >
         {!isRegistered && (
           <Typography variant="h2">
-            A Hurricane can strike at any moment. Register today to get insured
+            A Natural Disaster can strike at any moment. Register today to get insured
             against damages that may uproot your life.
           </Typography>
         )}
         {isRegistered && !isPayingPremiun && (
           <Typography variant="h2">
             Once you start paying the premiums you'll automatically recieve a
-            payout if you're hit by a hurricane.
+            payout if you're hit by a Natural Disaster.
           </Typography>
         )}
         {isPayingPremiun && (
