@@ -13,11 +13,14 @@ A decentralized insurance system where all users can receive payments instantly 
 
 ## Technology Stack:
 - Frontend: ReactJs
-- Oracle:ChainLink
-- Login:Metamask/Moralis
-- Smart Contracts Framework:Hardhat
-- Premium Streaming:SuperFluid
-- Deployment:Polygon(Mumbai Testnet)
+- Oracle: ChainLink
+- Login: Metamask/Portis
+- Smart Contracts Framework: Hardhat
+- Premium Streaming: SuperFluid
+- Deployment: Goerli Testnet(Ethereum)
+- API development: Express and Nodejs
+
+
 
 ##  What we Provide:
 Apply for insurance against cyclones and hurricanes through our app using your permanent location.
