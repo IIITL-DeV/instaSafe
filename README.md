@@ -41,7 +41,7 @@ A fixed amount in DAI is paid to the users eligible.
 - Install dependencies: yarn install
 - Run the React app: npm start
 - Just make sure you are connected to Görli/Goerli Testnet
-- More detailed walkthrough given in report-
+- More detailed walkthrough given in report.
 
 ## ScreenShots
 
