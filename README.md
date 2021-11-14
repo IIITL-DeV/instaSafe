@@ -1,7 +1,10 @@
 # instaSAFE
 
 
-A decentralized insurance system where all users can receive payments instantly after a cyclone strikes without having to contact centralized companies and obtain confirmation of funds.
+A decentralized insurance system where all users can receive payments instantly after a cyclone strikes without having to contact centralized companies and obtain confirmation of funds directly into your wallet.
+
+
+![gg2](https://user-images.githubusercontent.com/52003051/141686414-084f17cd-1094-4fcf-b33e-7d1e796e5536.png)
 
 ## Team Members
 - Hritwik Tripathi
@@ -17,7 +20,7 @@ A decentralized insurance system where all users can receive payments instantly 
 - Login: Metamask/Portis
 - Smart Contracts Framework: Hardhat
 - Premium Streaming: SuperFluid
-- Deployment: Goerli Testnet(Ethereum)
+- Deployment: Görli/Goerli Testnet(Ethereum)
 - API development: Express and Nodejs
 
 
@@ -37,8 +40,11 @@ A fixed amount in DAI is paid to the users eligible.
 - cd frontend
 - Install dependencies: yarn install
 - Run the React app: npm start
-## Demo(YouTube)
+- Just make sure you are connected to Görli/Goerli Testnet
+
+## ScreenShots
 
 
 
+![gg1](https://user-images.githubusercontent.com/52003051/141686381-83207377-359c-4daf-8539-56608ff7a1e2.png)
 
