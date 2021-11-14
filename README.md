@@ -36,7 +36,7 @@ Chainlink oracles fetch the current weather conditions for each active user
 A fixed amount in DAI is paid to the users eligible.
 
 ## Run(Steps)
-- Clone the repository: git clone - https://github.com/Sylvester-dev/SWE-Project.git
+- Clone this repository
 - ```cd frontend```
 - Install dependencies: yarn install
 - Run the React app: npm start
