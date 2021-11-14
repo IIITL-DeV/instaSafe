@@ -240,7 +240,7 @@ export default function About() {
           <div style={{ marginTop: "20px" }}>
             <img
               alt="CardImage"
-              src="https://siasky.net/OACgFb5Uek4vOw-_eR_z-BRvyT9rjqk3OPdV6nvTAT8erQ"
+              src="https://ipfs.io/ipfs/bafkreiccqtd6ymohnhz6wyewpmugl32ngmntnmzrmh5wo5r36htpn75hla"
               style={{
                 borderRadius: "10px",
                 height: "200px",
