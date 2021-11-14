@@ -56,7 +56,11 @@ function Faq() {
       </AccordionItem>
     </AccordionItem>
   </Accordion>
+
+  <p style={{marginLeft:"45%", marginBottom:"0", marginTop:"175px"}}>Made with ❤️ by Team Instasafe</p>  
 </div>
+
+
   )
 }
 
