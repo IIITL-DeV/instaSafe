@@ -7,11 +7,11 @@ A decentralized insurance system where all users can receive payments instantly 
 ![gg2](https://user-images.githubusercontent.com/52003051/141686414-084f17cd-1094-4fcf-b33e-7d1e796e5536.png)
 
 ## Team Members
-- Hritwik Tripathi
-- Vineet Kumar
-- Mayank Verma
-- Gautam Patodi
-- Vaibhav Ekka
+- Hritwik Tripathi (LIT2019012)
+- Vineet Kumar (LIT2019032)
+- Mayank Verma (LIT2019038)
+- Gautam Patodi (LIT2019019)
+- Vaibhav Ekka (LCS2019030)
 
 
 ## Technology Stack:
@@ -37,10 +37,11 @@ A fixed amount in DAI is paid to the users eligible.
 
 ## Run(Steps)
 - Clone the repository: git clone - https://github.com/Sylvester-dev/SWE-Project.git
-- cd frontend
+- ```cd frontend```
 - Install dependencies: yarn install
 - Run the React app: npm start
 - Just make sure you are connected to Görli/Goerli Testnet
+- More detailed walkthrough given in report-
 
 ## ScreenShots
 
